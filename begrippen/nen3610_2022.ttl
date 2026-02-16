@@ -57,7 +57,7 @@ col:tijdlijn_geldigheid a skos:Collection;
   skos:definition ""@nl;
   dct:source "NEN3610:2022 Basismodel Geo-informatie - 8.3.2"@nl;
   skos:scopeNote "Beschrijving van de geldigheidsperiode van een informatieobject door het benoemen van de tijdstippen van verandering van eigenschappen, de toestand, van een object in de werkelijkheid. Implementatie van de tijdlijn geldigheid gebeurt door bij iedere versie van een informatieobject registratiegegevens op te nemen met twee attributen: beginGeldigheid en eindGeldigheid, die aangeven op welke periode deze versie van het informatieobject betrekking heeft."@nl;
-  skos:editorialNote "Dit is de collectie 'tijdlijn_geldigheid' en heeft daarom een andere definitie dan het begrip 'tijdlijn_geldigheid'"@nl;
+  skos:editorialNote "Dit is de collectie 'tijdlijn_geldigheid' en heeft daarom een andere definitie dan het begrip 'tijdlijn_geldigheid'."@nl;
   skos:member :begin_geldigheid, :eind_geldigheid;
   skos:prefLabel "Tijdlijn geldigheid"@nl .
 
@@ -66,7 +66,7 @@ col:tijdlijn_registratie a skos:Collection;
   dct:source "NEN3610:2022 Basismodel Geo-informatie - 8.3.3"@nl;
   skos:scopeNote "Beschrijving van de tijdstippen van veranderingen van gegevens van een informatieobject in een registratie. Dit houdt in dat tijdstippen van aanpassing van attributen of attribuutwaarden in een registratie of database worden vastgelegd."@nl;
   skos:editorialNote "De tijdstippen dat iets wordt geregistreerd."@nl;
-  skos:editorialNote "Dit is de collectie 'tijdlijn_registratie' en heeft daarom een andere definitie dan het begrip 'tijdlijn_registratie'"@nl;
+  skos:editorialNote "Dit is de collectie 'tijdlijn_registratie' en heeft daarom een andere definitie dan het begrip 'tijdlijn_registratie'."@nl;
   skos:member :tijdstip_registratie, :eind_registratie;
   skos:prefLabel "Tijdlijn registratie"@nl .
 
@@ -74,7 +74,7 @@ col:levensduur a skos:Collection;
   skos:definition ""@nl;
   dct:source "NEN3610:2022 Basismodel Geo-informatie - 8.3.4"@nl;  
   skos:scopeNote "Afgeleid gegeven van een object in de werkelijkheid, dat begint bij het eerste voorkomen van dat object en eindigt wanneer het object verdwijnt. De registratie van de levensduur is daarmee de periode in de werkelijkheid waarin het informatieobject de werkelijkheid representeert. Deze levensduur kan worden afgeleid door naar de volledige tijdlijn geldigheid van een informatieobject te kijken. Het begin van de tijdlijn is de informatie over het ontstaan van het object in de werkelijkheid die bekend is bij het eerste inwinningsmoment. Het kan zijn dat het object dan al aanwezig is en het ontstaansmoment alleen bij benadering te bepalen is. Bij de interpretatie van het gegeven moet men hier rekening mee houden. Voor het einde van de levensduur geldt dat als er voor tijdlijn geldigheid een eindGeldigheid is ingevuld en er daarna geen nieuwe versie met een beginGeldigheid is opgenomen, dat dan de levensduur op de laatste eindGeldigheid is beëindigd. Door nu de ontstaandsdatum van het object in de werkelijkheid op te nemen in iedere versie van het informatieobject en bij de laatste versie de verdwijningsdatum, kunnen ook zonder de hele historie te doorlopen ontstaan en verdwijnen worden achterhaald."@nl;
-  skos:editorialNote "Dit is de collectie 'levensduur' en heeft daarom een andere definitie dan het begrip 'levensduur'"@nl;
+  skos:editorialNote "Dit is de collectie 'levensduur' en heeft daarom een andere definitie dan het begrip 'levensduur'."@nl;
   skos:member :object_begintijd, :object_eindtijd;
   skos:prefLabel "Levensduur"@nl .
 
@@ -115,13 +115,13 @@ col:ruimtelijke_relaties a skos:Collection;
   skos:definition "Planten die op natuurlijke wijze zijn ontstaan of door mensen zijn aangeplant."@nl;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Begroeiing"@nl;
-  skos:scopeNote "Begroeiing kan dus spontaan of natuurlijk zijn(vegetatie), maar ook door menselijk toedoen tot stand zijn gekomen (aanpland of beplanting) of combinaties daarvan."@nl .
+  skos:scopeNote "Begroeiing kan dus spontaan of natuurlijk zijn (vegetatie), maar ook door menselijk toedoen tot stand zijn gekomen (aanplant of beplanting) of combinaties daarvan."@nl .
 
 :bodem a skos:Concept;
   rdfs:label "Bodem"@nl;
   dct:source "NEN3610:2022 Basismodel Geo-informatie - 8.4.4"@nl;
   skos:broader :reeel_object;
-  skos:definition "Bovenste deel van de aarde, exlusief oppervlaktewater"@nl;
+  skos:definition "Bovenste deel van de aarde, exlusief oppervlaktewater."@nl;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Bodem"@nl;
   skos:scopeNote "Bodem verwijst naar een typering en/of benoeming van het aardoppervlak, waarbij de bodem doorloopt onder het oppervlaktewater. Bodem omvat ook de daaronder liggende bedemmaterialen met indelingen die kunnen verschillen per vakgebied zoals bodemkunde, geologie, geohydrologie en of geomorfologie."@nl .
@@ -143,7 +143,7 @@ col:ruimtelijke_relaties a skos:Collection;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Functionele ruimte"@nl;
   skos:example "Huis, brug, asfalt, waterleiding, fabriek en mijnstelsel."@nl;
-  skos:scopeNote "Een functionele ruimte wordt gebruikt om een (gebruiks)functie aan een ruimte toe te kennen. Het functionele gebruik va nde ruimte volgt niet altijd de fysieke begrenzine van reële objecten."@nl .
+  skos:scopeNote "Een functionele ruimte wordt gebruikt om een (gebruiks)functie aan een ruimte toe te kennen. Het functionele gebruik van de ruimte volgt niet altijd de fysieke begrenzine van reële objecten."@nl .
 
 :gebouw a skos:Concept;
   rdfs:label "Gebouw"@nl;
@@ -160,7 +160,7 @@ col:ruimtelijke_relaties a skos:Collection;
   skos:broader :virtuele_ruimte;
   skos:definition "Ruimte die bekend staat onder een vanuit de historie of het gebruik bekende benaming of een fysisch-geografische samenhang, al dan niet met zijn omgeving, kent."@nl;
   skos:scopeNote "De grenzen zijn niet altijd exact vastgesteld."@nl;
-  skos:example "Noordoostpolder, Midden-Nederland, rivierengebied, Veluwe, Zuid-Limburg, kustgebied"@nl;
+  skos:example "Noordoostpolder, Midden-Nederland, rivierengebied, Veluwe, Zuid-Limburg, kustgebied."@nl;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Geografische ruimte"@nl .
 
@@ -195,7 +195,7 @@ col:ruimtelijke_relaties a skos:Collection;
   skos:broader :constructie;
   skos:definition "Civiel-technische constructie voor de infrastructuur van wegen, water, spoorbanen, waterkeringen en/of leidingen."@nl;
   skos:scopeNote "Hieronder vallen overbruggingen, waterstaatkundige werken en waterkerende constructies."@nl;
-  skos:example "Overbruggingen: brug, viaduct, aquaduct enz. Waterscaatkundig werk: sluis. Waterkerende constructies: stuw, vaste dam."@nl;
+  skos:example "Overbruggingen: brug, viaduct, aquaduct enz. Waterstaatkundig werk: sluis. Waterkerende constructies: stuw, vaste dam."@nl;
   skos:prefLabel "Kunstwerk"@nl .
 
 :leiding a skos:Concept;
@@ -212,7 +212,7 @@ col:ruimtelijke_relaties a skos:Collection;
   dct:source "NEN3610:2022 Basismodel Geo-informatie - 8.4.4"@nl;
   skos:broader :verkeerruimte;
   skos:definition "Verkeerruimte voor voertuigen die zich door de lucht verplaatsen."@nl;
-  skos:scopeNote "Luchtvaartruimte wordt bijvoorbeeld gebruikt door allerlei soorten vliegtuigenen helikopters."@nl;
+  skos:scopeNote "Luchtvaartruimte wordt bijvoorbeeld gebruikt door allerlei soorten vliegtuigen en helikopters."@nl;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Luchtvaartruimte"@nl .
 
@@ -240,7 +240,7 @@ col:ruimtelijke_relaties a skos:Collection;
   dct:source "NEN3610:2022 Basismodel Geo-informatie - 8.4.4"@nl;
   skos:broader :virtuele_ruimte;
   skos:definition "Op basis van wet-of regelgeving afgebakende ruimte die als eenheid geldt van politiek/bestuurlijke verantwoordelijkheid of voor bedrijfsvoering."@nl;
-  skos:scopeNote "Registratieve ruimte omvat objecten die onder de wet- of regelgeving vallen fo die voor bedrijfsvoering administratief van belang zijn. In veel gevallen zal een dergelijk gebied ook een registratieve aanduiding of registratief nummer hebben."@nl;
+  skos:scopeNote "Registratieve ruimte omvat objecten die onder de wet- of regelgeving vallen of die voor bedrijfsvoering administratief van belang zijn. In veel gevallen zal een dergelijk gebied ook een registratieve aanduiding of registratief nummer hebben."@nl;
   skos:example "gemeente Delft, postcodegebied 2345, politieregio Haaglanden, veiligheidsregio Gelderland-Midden, Nationaal Park de Hoge Veluwe, kadastraal perceel."@nl;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Registratieve ruimte"@nl .
@@ -250,7 +250,7 @@ col:ruimtelijke_relaties a skos:Collection;
   dct:source "NEN3610:2022 Basismodel Geo-informatie - 8.4.4"@nl;
   skos:broader :verkeerruimte;
   skos:definition "Verkeerruimte voor voertuigen die zich over water verplaatsen."@nl;
-  skos:scopeNote "Scheepvaartruimte wordt gebruit door allerlei soorten schepen."@nl;
+  skos:scopeNote "Scheepvaartruimte wordt gebruikt door allerlei soorten schepen."@nl;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Scheepvaartruimte"@nl .
 
@@ -259,7 +259,7 @@ col:ruimtelijke_relaties a skos:Collection;
   dct:source "NEN3610:2022 Basismodel Geo-informatie - 8.4.4"@nl;
   skos:broader :verkeerruimte;
   skos:definition "Verkeerruimte voor voertuigen die zich over rails verplaatsen."@nl;
-  skos:scopeNote "Spoorverkeerruimte wordt gebruikt door bijvoorbeeld treinen, trams en metro's"@nl;
+  skos:scopeNote "Spoorverkeerruimte wordt gebruikt door bijvoorbeeld treinen, trams en metro's."@nl;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Spoorverkeerruimte"@nl .
 
@@ -276,8 +276,8 @@ col:ruimtelijke_relaties a skos:Collection;
   rdfs:label "Verharding"@nl;
   dct:source "NEN3610:2022 Basismodel Geo-informatie - 8.4.4"@nl;
   skos:broader :constructie;
-  skos:definition "Een door egaliseren, verstevigen en/of verruwen voor het beoogde gebruik geschikt gemaakt oppervlak, bestaande uit in één of meer lagen over de bodum of onderliggende constructie aangelegd materiaal."@nl;
-  skos:scopeNote "Een verharding is fysiek begrensd aanwzig. Het type gebruik va nde verhadring kan meervoudig zijn en hoeft niet de fysieke begrenzing te volgen."@nl;
+  skos:definition "Een door egaliseren, verstevigen en/of verruwen voor het beoogde gebruik geschikt gemaakt oppervlak, bestaande uit in één of meer lagen over de bodem of onderliggende constructie aangelegd materiaal."@nl;
+  skos:scopeNote "Een verharding is fysiek begrensd aanwezig. Het type gebruik van de verharding kan meervoudig zijn en hoeft niet de fysieke begrenzing te volgen."@nl;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Verharding"@nl .
 
@@ -286,7 +286,7 @@ col:ruimtelijke_relaties a skos:Collection;
   dct:source "NEN3610:2022 Basismodel Geo-informatie - 8.4.4"@nl;
   skos:broader :transportruimte;
   skos:definition "Transportruimte voor verkeer via land, water of door de lucht."@nl;
-  skos:scopeNote "Verkeerruimten zijn transportruimten die specifiek bedoeld zijn voor het verplaatsen van mensen of goederen al dan niet met vervoersmiddelen, zoals bijvoorbeeld treinen, schepen en vliegtuigen"@nl;
+  skos:scopeNote "Verkeerruimten zijn transportruimten die specifiek bedoeld zijn voor het verplaatsen van mensen of goederen al dan niet met vervoersmiddelen, zoals bijvoorbeeld treinen, schepen en vliegtuigen."@nl;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Verkeerruimte"@nl .
 
@@ -296,7 +296,7 @@ col:ruimtelijke_relaties a skos:Collection;
   skos:broader :geo-object;
   skos:definition "Geo-object dat zich geheel of gedeeltelijk niet-materieel manifesteert en dus slechts in abstracte en/of geregistreerde vorm bestaat."@nl;
   skos:scopeNote "Virtuele ruimten bevatten geo-objecten waarvan de begrenzing of een gedeelte van de begrenzing niet tastbaar en dus ook niet zichtbaar aanwezig is. Het betreft veelal het administratief of wettelijk benoemen en vastleggen van ruimten."@nl;
-  skos:example "Objecten voor bestuurlijke grenzen, eigendomsbegrenzing, beheerbegrenzingen, ruimtelijk beleid"@nl;
+  skos:example "Objecten voor bestuurlijke grenzen, eigendomsbegrenzing, beheerbegrenzingen, ruimtelijk beleid."@nl;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Virtuele ruimte"@nl .
 
@@ -305,7 +305,7 @@ col:ruimtelijke_relaties a skos:Collection;
   dct:source "NEN3610:2022 Basismodel Geo-informatie - 8.4.4"@nl;
   skos:broader :transportruimte;
   skos:definition "Transportruimte waardoor water zich verplaatst."@nl;
-  skos:scopeNote "Een Waterverplaatsingsruimte realiseert het hydrologissch aspect va nwater en met name de oppervlaktewaterhydrologie. Het benoemt de ruimte die wordt gebruikt voor o.a. afwatering, watertoevoer en drainage."@nl;
+  skos:scopeNote "Een Waterverplaatsingsruimte realiseert het hydrologisch aspect van water en met name de oppervlaktewaterhydrologie. Het benoemt de ruimte die wordt gebruikt voor o.a. afwatering, watertoevoer en drainage."@nl;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Waterverplaatsingsruimte"@nl .
 
@@ -314,7 +314,7 @@ col:ruimtelijke_relaties a skos:Collection;
   dct:source "NEN3610:2022 Basismodel Geo-informatie - 8.4.4"@nl;
   skos:broader :verkeerruimte;
   skos:definition "Transportruimte voor weggebruikers die zich over wegen verplaatsen."@nl;
-  skos:scopeNote "Wegverkeerruimten worden gebruikt door bijvoorbeeld voetgangers, fietsers en autoverkeer"@nl;
+  skos:scopeNote "Wegverkeerruimten worden gebruikt door bijvoorbeeld voetgangers, fietsers en autoverkeer."@nl;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Wegverkeerruimte"@nl .
 
@@ -328,7 +328,7 @@ col:ruimtelijke_relaties a skos:Collection;
   skos:hiddenLabel "TijdlijnGeldigheid"@nl;
   skos:definition "Typering dat dit attribuut wordt gebruikt voor het beschrijven van de geldigheidsperiode van de gegevens."@nl;
   skos:scopeNote "Tijdlijn geldigheid benoemt periodes waarop een informatieobject, oftewel de functionele gegevens die worden bijgehouden over de eigenschappen van een object, een geldige (correcte) representatie zijn van de werklijkheid. TijdlijnGeldigheid wordt geïmplementeerd door de attributen: beginGeldigheid en eindGeldigheid."@nl;
-  skos:editorialNote "Dit is het begrip 'tijdlijn_geldigheid' en heeft daarom een andere definitie dan de collectie 'tijdlijn_geldigheid'"@nl;
+  skos:editorialNote "Dit is het begrip 'tijdlijn_geldigheid' en heeft daarom een andere definitie dan de collectie 'tijdlijn_geldigheid'."@nl;
   skos:inScheme bk:nen3610-2022;
   skos:topConceptOf bk:nen3610-2022;
   skos:related :tijdlijn_geldigheid, :eind_geldigheid;
@@ -341,7 +341,7 @@ col:ruimtelijke_relaties a skos:Collection;
   skos:hiddenLabel "TijdlijnRegistratie"@nl;
   skos:definition "Typering dat dit attribuut wordt gebruikt voor historie van veranderingen van gegevens van een informatieobject in de registratie."@nl;
   skos:scopeNote "TijdlijnRegistratie wordt geïmplementeerd door de attributen: tijdstipRegistratie en eindRegistratie."@nl;
-  skos:editorialNote "Dit is het begrip 'tijdlijn_registratie' en heeft daarom een andere definitie dan de collectie 'tijdlijn_registratie'"@nl;
+  skos:editorialNote "Dit is het begrip 'tijdlijn_registratie' en heeft daarom een andere definitie dan de collectie 'tijdlijn_registratie'."@nl;
   skos:inScheme bk:nen3610-2022;
   skos:topConceptOf bk:nen3610-2022;
   skos:related :tijdstip_registratie, :eind_registratie;
@@ -350,9 +350,9 @@ col:ruimtelijke_relaties a skos:Collection;
 :levensduur a skos:Concept;
   rdfs:label "Levensduur";
   skos:prefLabel "Levensduur"@nl;
-  skos:definition "Typering dat dit attribuut wordt gebruikt voor de Vastlegging van het tijdsinterval waarin dit informatieobject de werkelijkheid representeert."@nl; 
-  skos:scopeNote "Levensduur wordt vastgelegd door de attributen: objectBegintijd en obejctEindtijd."@nl;
-  skos:editorialNote "Dit is het begrip 'levensduur' en heeft daarom een andere definitie dan de collectie 'levensduur'"@nl;
+  skos:definition "Typering dat dit attribuut wordt gebruikt voor de vastlegging van het tijdsinterval waarin dit informatieobject de werkelijkheid representeert."@nl; 
+  skos:scopeNote "Levensduur wordt vastgelegd door de attributen: objectBegintijd en objectEindtijd."@nl;
+  skos:editorialNote "Dit is het begrip 'levensduur' en heeft daarom een andere definitie dan de collectie 'levensduur'."@nl;
   skos:inScheme bk:nen3610-2022;
   skos:topConceptOf bk:nen3610-2022;
   skos:related :object_begintijd, :object_eindtijd;
@@ -369,7 +369,7 @@ col:ruimtelijke_relaties a skos:Collection;
 
 :eind_geldigheid a skos:Concept;
   dct:source "NEN3610:2022 Basismodel Geo-informatie - 8.3.2"@nl;
-  skos:definition "Eind van de periode waarop deze versie van het informatieobject geldig is in de werkelijkheid."@nl;
+  skos:definition "Eind van de periode waarop deze versie van het informatieobject geldig is."@nl;
   skos:editorialNote "Wanneer deze waarde niet is ingevuld is de versie nog geldig."@nl;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Eind geldigheid"@nl;
@@ -379,7 +379,7 @@ col:ruimtelijke_relaties a skos:Collection;
 :tijdstip_registratie a skos:Concept;
   rdfs:label "Tijdstip registratie"@nl;
   dct:source "NEN3610:2022 Basismodel Geo-informatie - 8.3.3"@nl;
-  skos:definition "Tijdstip waarop deze versie van het informatieobject is opgenomen in de registratie."@nl;
+  skos:definition "Tijdsaanduiding van het moment waarop deze versie van het informatieobject is opgenomen in de registratie."@nl;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Tijdstip registratie"@nl;
   skos:hiddenLabel "tijdstipRegistratie"@nl, "tijdstipregistratie"@nl;
@@ -388,7 +388,7 @@ col:ruimtelijke_relaties a skos:Collection;
 :eind_registratie a skos:Concept;
   rdfs:label "Eind registratie"@nl;
   dct:source "NEN3610:2022 Basismodel Geo-informatie - 8.3.3"@nl;
-  skos:definition "Eind van de periode dat deze versie van het informatieobject geldig is in de registratie."@nl;
+  skos:definition "Eind van de periode dat deze versie van het informatieobject actueel is in de registratie."@nl;
   skos:editorialNote "De periode is tot aan deze tijdsaanduiding. Wanneer deze waarde niet is ingevuld, is de versie nog actueel."@nl;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Eind registratie"@nl;
@@ -429,7 +429,7 @@ col:ruimtelijke_relaties a skos:Collection;
   rdfs:label "Registratiegegevens";
   skos:prefLabel "Registratiegegevens"@nl;
   skos:definition "Gegevens over de registratie van het object als informatieobject."@nl;
-  skos:scopeNote "De registratie gegevens zijn de versie en tijdlijngegevens die horen bij het registreren van één versie van het informatieobject. Ze horen als metadata bij de gegevensset van het informatieobject."@nl;
+  skos:scopeNote "De registratiegegevens zijn de versie en tijdlijngegevens die horen bij het registreren van één versie van het informatieobject. Ze horen als metadata bij de gegevensset van het informatieobject."@nl;
   dct:source "NEN3610:2022 Basismodel Geo-informatie - 8.2.3"@nl;
   skos:topConceptOf bk:nen3610-2022;
   skos:inScheme bk:nen3610-2022 .
@@ -453,8 +453,8 @@ col:ruimtelijke_relaties a skos:Collection;
 :identificatie a skos:Concept;
   dct:source "NEN3610:2022 Basismodel Geo-informatie - 8.2.5"@nl;
   skos:definition "Unieke identificatiecode van een informatieobject binnen de context van een registratie."@nl;
-  skos:scopeNote "Identificatie is de identificatiecode die een object heeft binnen een registratie of binnen een ketenproces voor data-uitwisseling. Binnen de registratie of de data-uitwisseling is het object uniek identificeerbaar. In combinatie met het attribuut domein wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties, uitwisselprocessen en ook wereldwijd uniek."@nl;
-  skos:editorialNote "Alleen de volgende karakters mogen in een waarde van het attribuut identificatie voorkomen: {'A' ... 'Z', 'a' ... 'z', '0' ... '9', '_', '-', ',', '.', '/', ':'}"@nl;
+  skos:scopeNote "Identificatie is de identificatiecode die een object heeft binnen een registratie of binnen een ketenproces voor data-uitwisseling. Binnen de registratie of de data-uitwisseling is het object uniek identificeerbaar. In combinatie met het attribuut domein wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties, uitwisselprocessen en ook mondiaal uniek."@nl;
+  skos:editorialNote "Alleen de volgende karakters mogen in een waarde van het attribuut identificatie voorkomen: {'A' ... 'Z', 'a' ... 'z', '0' ... '9', '_', '-', ',', '.', '/', ':'}."@nl;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Identificatie"@nl;
   skos:topConceptOf bk:nen3610-2022 .
@@ -473,7 +473,7 @@ col:ruimtelijke_relaties a skos:Collection;
 :attribuut a skos:Concept;
   rdfs:label "Attribuut"@nl, "Feature attribute"@en;
   dct:source "NEN3610:2022 Basismodel Geo-informatie - Sectie 3.1"@nl, "NEN-EN-ISO 19101-1:2014 Geographic information - Reference model - Part 1: Fundamentals "@en;
-  skos:definition "Kenmerk of gegeven gemodelleerd als informatie-element van een informatieobject"@nl;
+  skos:definition "Kenmerk of gegeven gemodelleerd als informatie-element van een informatieobject."@nl;
   skos:exactMatch iso:170;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Attribuut"@nl;
@@ -485,7 +485,7 @@ col:ruimtelijke_relaties a skos:Collection;
 :attribuutwaarde a skos:Concept;
   rdfs:label "Attribuutwaarde"@nl, "Value"@en;
   dct:source "NEN3610:2022 Basismodel Geo-informatie - Sectie 3.2"@nl;
-  skos:definition "Waarde die een attribuut aanneemt"@nl;
+  skos:definition "Waarde die een attribuut aanneemt."@nl;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Attribuutwaarde"@nl;
   skos:related :attribuut;
@@ -512,7 +512,7 @@ col:ruimtelijke_relaties a skos:Collection;
 :coordinaat a skos:Concept;
   rdfs:label "Coördinaat"@nl, "Coordinate"@en;
   dct:source "NEN3610:2022 Basismodel Geo-informatie - Sectie 3.5"@nl, "NEN-EN-ISO 19111:2020 Geographic information - Referencing by coordinates "@en;
-  skos:definition "Getal in een sequentie van getallen om de positie van een punt te bepalen"@nl;
+  skos:definition "Getal in een sequentie van getallen om de positie van een punt te bepalen."@nl;
   skos:exactMatch iso:2038;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Coördinaat"@nl;
@@ -534,7 +534,7 @@ col:ruimtelijke_relaties a skos:Collection;
 :coordinaatsysteem a skos:Concept;
   rdfs:label "Coordinate system"@en, "Coördinaatsysteem"@nl;
   dct:source "NEN3610:2022 Basismodel Geo-informatie - Sectie 3.7"@nl, "NEN-EN-ISO 19111:2020 Geographic information - Referencing by coordinates "@en;
-  skos:definition "Set van wiskundige regels voor het toekennen van coördinaten aan punten"@nl;
+  skos:definition "Set van wiskundige regels voor het toekennen van coördinaten aan punten."@nl;
   skos:exactMatch iso:93;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Coördinaatsysteem"@nl;
@@ -624,7 +624,7 @@ col:ruimtelijke_relaties a skos:Collection;
 :geografische_identificatie a skos:Concept;
   rdfs:label "Geografische identificatie"@nl, "Geographic identifier"@en;
   dct:source "NEN3610:2022 Basismodel Geo-informatie - Sectie 3.16"@nl, "NEN-EN-ISO 19112:2019 Geographic information - Spatial referencing by geographic identifiers"@en;
-  skos:definition "Ruimtelijke referentie door een label of code waarmee een locatie wordt geïdentificeerd"@nl;
+  skos:definition "Ruimtelijke referentie door een label of code waarmee een locatie wordt geïdentificeerd."@nl;
   skos:exactMatch iso:204;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Geografische identificatie"@nl;
@@ -636,7 +636,7 @@ col:ruimtelijke_relaties a skos:Collection;
   dct:source "NEN3610:2022 Basismodel Geo-informatie - Sectie 3.17"@nl, "NEN-EN-ISO 19101-1:2014 Geographic information - Reference model - Part 1: Fundamentals"@en;
   skos:altLabel "Geografische informatie"@nl, "Geographic Information"@en;
   skos:definition "Informatie over fenomenen met een directe of indirecte referentie naar een locatie relatief ten opzichte van de aarde."@nl;
-  skos:example "Bijvoorbeeld ten opzichte van het aardoppervlak"@nl;
+  skos:example "Bijvoorbeeld ten opzichte van het aardoppervlak."@nl;
   skos:exactMatch iso:205;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Geo-informatie"@nl;
@@ -648,7 +648,7 @@ col:ruimtelijke_relaties a skos:Collection;
 :georeferentie a skos:Concept;
   rdfs:label "Georeferentie"@nl, "Georeference"@en;
   dct:source "NEN3610:2022 Basismodel Geo-informatie - Sectie 3.19"@nl;
-  skos:definition "Locatie van een ruimtelijk object vastgelegd in een ruimtelijk referentiesysteem"@nl;
+  skos:definition "Locatie van een ruimtelijk object vastgelegd in een ruimtelijk referentiesysteem."@nl;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Georeferentie"@nl;
   skos:topConceptOf bk:nen3610-2022 .
@@ -698,7 +698,7 @@ col:ruimtelijke_relaties a skos:Collection;
   skos:exactMatch iso:1650;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Metadata"@nl;
-  skos:editorialNote "Een bron wordt in NEN-EN-ISO 19115-1:2014 gedefinieerd als: ídentificeerbaar middel dat aan een vereiste voldoet'."@nl;
+  skos:editorialNote "Een bron wordt in NEN-EN-ISO 19115-1:2014 gedefinieerd als: 'identificeerbaar middel dat aan een vereiste voldoet'."@nl;
   skos:editorialNote "In de Richtlijn Metagegevens Overheidsinformatie worden metadata omschreven als: Gegevens over informatieobjecten. Zij maken het mogelijk informatieobjecten te vinden, uit te wisselen en te beheren."@nl;
   skos:editorialNote "In het Nederlands metadataprofiel op ISO19115 voor geografie worden metadata omschreven als: Informatie die ruimtelijke datasets en datasetseries beschrijft welke het mogelijk maakt om deze te zoeken, evalueren en te gebruiken."@nl;
   skos:example "Voorbeelden hiervan zijn: informatieobject, dataset, datasetserie, dienst, document, initiatief, software, persoon of organisatie."@nl;
@@ -723,7 +723,7 @@ col:ruimtelijke_relaties a skos:Collection;
 :objectcatalogus a skos:Concept;
   dct:source "NEN3610:2022 Basismodel Geo-informatie - Sectie 3.27"@nl, "NEN-EN-ISO 19101-1:2014"@en;
   skos:prefLabel "Objectcatalogus"@nl;
-  skos:definition "Catalogus met de definities en besschrijvingen van de objecttypen, attributen en relaties die voorkomen in één of meer geografische datasets, samen met alle operaties die op de data mogelijk zijn."@nl;
+  skos:definition "Catalogus met de definities en beschrijvingen van de objecttypen, attributen en relaties die voorkomen in één of meer geografische datasets, samen met alle operaties die op de data mogelijk zijn."@nl;
   skos:inScheme bk:nen3610-2022;
   skos:topConceptOf bk:nen3610-2022 .
 
@@ -740,7 +740,7 @@ col:ruimtelijke_relaties a skos:Collection;
 :registratie a skos:Concept;
   rdfs:label "Registratie"@nl;
   dct:source "NEN3610:2022 Basismodel Geo-informatie - Sectie 3.29"@nl;
-  skos:definition "Geïdentificeerde en erkende gegevensverzameling"@nl;
+  skos:definition "Geïdentificeerde en erkende gegevensverzameling."@nl;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Registratie"@nl;
   skos:scopeNote "Een basisregistratie is een registratie."@nl;
@@ -769,7 +769,7 @@ col:ruimtelijke_relaties a skos:Collection;
 :ruimtelijk_referentiesysteem a skos:Concept;
   rdfs:label "Ruimtelijk referentiesysteem"@nl, "Spatial reference system"@en;
   dct:source "NEN3610:2022 Basismodel Geo-informatie - Sectie 3.32"@nl, "NEN-EN-ISO 19112:2019 Geographic information - Spatial referencing by geographic identifiers"@en;
-  skos:definition "Model (systeem) voor identificatie van een positie (locatie) in de werkelijkheid"@nl;
+  skos:definition "Model (systeem) voor identificatie van een positie (locatie) in de werkelijkheid."@nl;
   skos:exactMatch iso:422;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Ruimtelijk referentiesysteem"@nl;
@@ -800,8 +800,8 @@ col:ruimtelijke_relaties a skos:Collection;
   skos:hiddenLabel "mogelijkGeenWaarde"@nl;
   rdfs:label "Mogelijk geen waarde"@nl;
   dct:source "NEN3610:2022 Basismodel Geo-informatie - 9.8"@nl;
-  skos:definition "Metagegeven dat aangeeeft dat een warde niet bekend is of dat een ontvanger niet geautoriseerd is om de waarde te ontvangen."@nl;
-  skos:scopeNote "Er zijn situaties dat de waarde van een attribuut om redenen niet wordt gedeeld of soms ook niet in een registraties is opgeslagen. Met het metagegeven mogelijk geen waarde = 'ja', wordt aangegeven of deze conditite is toegestaan. In dat geval mag deze eigenschap bij uitwisseling een 'nil'-waarde bevatten. Dit betekent dat het attribuut geen waarde heeft in deze dataset, maar at het object in de werkelijkheid wel een waarde kan hebben."@nl;
+  skos:definition "Metagegeven dat aangeeeft dat een waarde niet bekend is of dat een ontvanger niet geautoriseerd is om de waarde te ontvangen."@nl;
+  skos:scopeNote "Er zijn situaties dat de waarde van een attribuut om redenen niet wordt gedeeld of soms ook niet in een registraties is opgeslagen. Met het metagegeven mogelijk geen waarde = 'ja', wordt aangegeven of deze conditie is toegestaan. In dat geval mag deze eigenschap bij uitwisseling een 'nil'-waarde bevatten. Dit betekent dat het attribuut geen waarde heeft in deze dataset, maar dat het object in de werkelijkheid wel een waarde kan hebben."@nl;
   skos:scopeNote "Het metagegeven mogelijk geen waarde = 'ja' wordt alleen toegepast op de attributen waarvan gewenst wordt dat deze mogelijkheid er is. Het kan zowel op verplichte attributen als op optionele attributen worden toegepast."@nl;
   skos:scopeNote "Bij mogelijk geen waarde = 'ja' hoort ook de mogelijkheid om de reden voor het niet uitwisselen of niet opnemen in de registratie te delen. Het gebruik hiervan is optioneel. Het is dus op het niveau van NEN 3610 niet verplicht om een reden op te nemen. Een sectoraal model kan hier nadere afspraken over maken. De redenen voor het niet delen van informatie zijn opgenomen in de lijst VoidReasonValue. Deze lijst is uitbreidbaar, waardoor ook andere redenen opgenomen kunnen worden."@nl;
   skos:inScheme bk:nen3610-2022;
@@ -812,7 +812,7 @@ col:ruimtelijke_relaties a skos:Collection;
   skos:hiddenLabel "geenWaarde"@nl;
   rdfs:label "Geen waarde"@nl;
   dct:source "NEN3610:2022 Basismodel Geo-informatie - 9.8"@nl;
-  skos:definition "Element heeft in werkelijkheid geen waarde"@nl;
+  skos:definition "Element heeft in werkelijkheid geen waarde."@nl;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Geen waarde"@nl;
   skos:broader :mogelijk_geen_waarde .
@@ -821,7 +821,7 @@ col:ruimtelijke_relaties a skos:Collection;
   skos:hiddenLabel "nietGeautoriseerd"@nl;
   rdfs:label "Niet geautoriseerd"@nl;
   dct:source "NEN3610:2022 Basismodel Geo-informatie - 9.8"@nl;
-  skos:definition "Deze zender vindt dat de ontvanger niet geautoriseerd is om de waarde te kennen"@nl;
+  skos:definition "Deze zender vindt dat de ontvanger niet geautoriseerd is om de waarde te kennen."@nl;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Niet geautoriseerd"@nl;
   skos:broader :mogelijk_geen_waarde .
@@ -830,7 +830,7 @@ col:ruimtelijke_relaties a skos:Collection;
   skos:hiddenLabel "nietOndersteund"@nl;
   rdfs:label "Niet ondersteund"@nl;
   dct:source "NEN3610:2022 Basismodel Geo-informatie - 9.8"@nl;
-  skos:definition "Zender houdt in zijn registratie geen waarde voor dit attribuut bij. Geldt voor alle objecten van dit objecttype"@nl;
+  skos:definition "Zender houdt in zijn registratie geen waarde voor dit attribuut bij. Geldt voor alle objecten van dit objecttype."@nl;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Niet ondersteund"@nl;
   skos:broader :mogelijk_geen_waarde .
@@ -839,7 +839,7 @@ col:ruimtelijke_relaties a skos:Collection;
   skos:hiddenLabel "vastgesteldOnbekend"@nl;
   rdfs:label "Vastgesteld onbekend"@nl;
   dct:source "NEN3610:2022 Basismodel Geo-informatie - 9.8"@nl;
-  skos:definition "Er is vastgesteld dat de waarde van het attribuut onbekend is en hoogst waarschijnlijk niet meer kan worden achterhaald (bijvoorbeeld omdat het brondocument onleesbaar is of het object niet meer bestaat in de werkelijkheid)"@nl;
+  skos:definition "Er is vastgesteld dat de waarde van het attribuut onbekend is en hoogst waarschijnlijk niet meer kan worden achterhaald (bijvoorbeeld omdat het brondocument onleesbaar is of het object niet meer bestaat in de werkelijkheid)."@nl;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Vastgesteld onbekend"@nl;
   skos:broader :mogelijk_geen_waarde .
@@ -848,7 +848,7 @@ col:ruimtelijke_relaties a skos:Collection;
   skos:hiddenLabel "waardeOnbekend"@nl;
   rdfs:label "Waarde onbekend"@nl;
   dct:source "NEN3610:2022 Basismodel Geo-informatie - 9.8"@nl;
-  skos:definition "Element is verplicht maar de waarde is bij de zender niet bekend"@nl;
+  skos:definition "Element is verplicht maar de waarde is bij de zender niet bekend."@nl;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Waarde onbekend"@nl;
   skos:broader :mogelijk_geen_waarde .
@@ -867,7 +867,7 @@ col:ruimtelijke_relaties a skos:Collection;
 :vorig_geldige_versie a skos:Concept;
   rdfs:label "Vorige geldige versie"@nl;
   dct:source "NEN3610:2022 Basismodel Geo-informatie - 8.2.5"@nl;
-  skos:definition "De vorige materieel geldige versie van de registratie van een geo-object"@nl;
+  skos:definition "De vorige materieel geldige versie van de registratie van een geo-object."@nl;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Vorige geldige versie"@nl;
   skos:topConceptOf bk:nen3610-2022 .
@@ -875,7 +875,7 @@ col:ruimtelijke_relaties a skos:Collection;
 :vorig_geregistreerde_versie a skos:Concept;
   rdfs:label "Vorige geregistreerde versie"@nl;
   dct:source "NEN3610:2022 Basismodel Geo-informatie - 8.2.5"@nl;
-  skos:definition "De vorige formeel geldige versie van de registratie van een geo-object"@nl;
+  skos:definition "De vorige formeel geldige versie van de registratie van een geo-object."@nl;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Vorige geregistreerde versie"@nl;
   skos:topConceptOf bk:nen3610-2022 .
@@ -965,7 +965,7 @@ col:ruimtelijke_relaties a skos:Collection;
 :applicatieschema a skos:Concept;
   rdfs:label "Applicatieschema"@nl, "Application schema"@en;
   dct:source "NEN3610:2022 Basismodel Geo-informatie - 12"@nl, "NEN-EN-ISO 19101-1:2014 Geographic information - Reference model - Part 1: Fundamentals "@en;
-  skos:definition "Informatiemodel dat gegevens beschrijft die worden gebruikt door een of meer applicaties"@nl;
+  skos:definition "Informatiemodel dat gegevens beschrijft die worden gebruikt door een of meer applicaties."@nl;
   skos:exactMatch iso:15;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Applicatieschema"@nl;
