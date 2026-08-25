@@ -1,7 +1,0 @@
-NEN 3610 - Basismodel geo-informatie - Termen, definities, relaties en algemene regels voor de uitwisseling van informatie over aan de aarde gerelateerd ruimtelijke objecten is de basisstandaard voor het modelleren van geo-informatiemodelen.
-
-NEN 3610, beschrijft regels en componenten waarmee sectorale geo-informatiemodellen opgesteld moeten worden. Het doel is een gemeenschappelijke basis te creëren op het gebied van informatiemodellering binnen het geodomein en daarmee bij te dragen aan een semantische interoperabiliteit tussen georegistraties. De gebruikstoepassing van NEN 3610 is het opstellen van geo-informatiemodellen die worden toegepast in een proces van gegevensuitwisseling en/of -publicatie op het web.
-
-De norm positioneert informatiemodellen in het bredere kader van een open en toegankelijke semantische architectuur bestaande uit begrippenkaders, informatiemodellen, ontologieën en daarvoor ontworpen registers.
-
-De NEN 3610 - ontologie bevat een model voor het toekennen van identificatie en registratiegevens, een temporeel model met onder andere een tijdlijn registratie en een tijdlijn geldigheid en een zogenaamd semantisch model met een geografische en thematische classificatie van concepten van fenomenen uit de werkelijkheid.
